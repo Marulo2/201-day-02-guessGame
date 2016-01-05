@@ -40,7 +40,15 @@
             alert('Seriously? What is wrong with you?')
           }
 
-        var ans4 = prompt("Final question! ")
+        var ans4 = prompt("Final question! Guess a number between 1 and 10!")
+          console.log('The user has input: ' + ans4)
+          if (ans4 <= 4) {
+            alert("Too low!")
+          } else {
+            alert("Too high!")
+          } else if (ans4 === 5) {
+            alert('Perfect!')
+          }
 
       </script>
     </body>
