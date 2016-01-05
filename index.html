@@ -1,0 +1,47 @@
+<!DOCTYPE>
+  <html>
+    <head>
+      <title>End of the World</title>
+    </head>
+
+    <body>
+      <h1>Trivia Time with Marshall Miller!</h1>
+      <p>How many questions that you couldn't possibly know the answer to can you guess correctly?</p>
+
+
+      <script>
+        alert('Welcome to Trivia Time!');
+        var user = prompt('Let\'s have the contestants name! What is your name?');
+          console.log("The user's name is: " + user);
+        alert('Welcome to Trivia Time, ' + user + '!');
+        alert("Let's get started! For now, please answer with an 'N' or a 'Y'");
+
+        var ans1 = prompt('Alright, ' + user + '.' + ' Was I born in Texas?');
+          console.log('The user has entered: ' + ans1);
+          if (ans1 === 'N') {
+            alert("Correct! I wasn't born in that hell hole. I was born in Kenya, Nairobi!");
+          } else {
+            alert('Fortunately, you are wrong!');
+          }
+
+        var ans2 = prompt('Did I live in Texas for more than 12 years?')
+          console.log('The user has entered: ' + ans2)
+          if (ans2 === 'N') {
+            alert("That's right! I only lived there for 11 years. Fuck my life.")
+          } else {
+            alert('That is wrong! I only lived there for 11 years... which is horrible!.')
+          }
+
+        var ans3 = prompt("Is Seattle an awesome city?")
+          console.log('The user has entered: ' + ans3)
+          if (ans3 === 'Y') {
+            alert("Yeah you'd have better said Yes. Of course, this place is great!")
+          } else {
+            alert('Seriously? What is wrong with you?')
+          }
+
+        var ans4 = prompt("Final question! ")
+
+      </script>
+    </body>
+  </html>
