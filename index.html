@@ -4,9 +4,21 @@
       <title>End of the World</title>
     </head>
 
+    <style>
+      body {
+        background-color: black;
+      }
+      h1 {
+        color: white;
+      }
+      p {
+        color: white;
+      }
+    </style>
+
     <body color:"black">
       <h1>Trivia Time with Marshall Miller!</h1>
-      <p>How many questions that you couldn't possibly know the answer to can you guess correctly?</p>
+      <p>How many questions can you guess correctly?</p>
 
 
       <script>
@@ -32,12 +44,12 @@
             alert('That is wrong! I only lived there for 11 years... which is horrible!.')
           }
 
-        var ans3 = prompt("Is Seattle an awesome city?")
+        var ans3 = prompt("Is Seattle an awesome city, " + user + '?')
           console.log('The user has entered: ' + ans3)
           if (ans3 === 'Y') {
             alert("Yeah you'd have better said Yes. Of course, this place is great!")
           } else {
-            alert('Seriously? What is wrong with you?')
+            alert('Seriously? What is wrong with you, ' + user + '!?')
           }
 
         var ans4 = prompt("Final question! Guess a number between 1 and 10!");
@@ -49,6 +61,8 @@
           } else if (ans4 == 5){
               alert("Perfect!");
           }
+
+          alert("Thanks for playing, " + user + "!")
 
           //Seems to be working now
 
