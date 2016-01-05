@@ -4,7 +4,7 @@
       <title>End of the World</title>
     </head>
 
-    <body>
+    <body color:"black">
       <h1>Trivia Time with Marshall Miller!</h1>
       <p>How many questions that you couldn't possibly know the answer to can you guess correctly?</p>
 
@@ -40,17 +40,17 @@
             alert('Seriously? What is wrong with you?')
           }
 
-        var ans4 = prompt("Final question! Guess a number between 1 and 10!")
-          console.log('The user has input: ' + ans4)
-          if (ans4 <= 4 ) {
-            alert("Too low!")
-          } else {
-            alert("Too high!")
-          } else if (ans4 === 5) {
-            alert('Perfect!')
+        var ans4 = prompt("Final question! Guess a number between 1 and 10!");
+          console.log('The user has input: ' + ans4);
+          if (ans4 <= 4) {
+            alert("Too low!");
+          } else if (ans4 >= 6){
+              alert("Too high!");
+          } else if (ans4 == 5){
+              alert("Perfect!");
           }
 
-          //Question 4 has not been coded correctly
+          //Seems to be working now
 
       </script>
     </body>
